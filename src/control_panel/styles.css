@@ -1,0 +1,107 @@
+.server-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* create 3 equal-width columns */
+    grid-template-rows: repeat(2, 65px); /* create 2 rows with a height of 50px */
+    gap: 20px; /* add 20px gap between grid items */
+    /* top: -280px; */
+    width: 500px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* create 3 equal-width columns */
+    grid-template-rows: repeat(5, 20px); /* create 2 rows with a height of 50px */
+    gap: 40px; /* add 20px gap between grid items */
+}
+
+.info-box {
+    left: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 310px;
+    height: 200px;
+    position: relative;
+}
+
+.team-list {
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 0.1fr); /* create 3 equal-width columns */
+    grid-template-rows: repeat(2, 65px); /* create 2 rows with a height of 50px */
+    gap: 20px; /* add 20px gap between grid items */
+    top: 170px;
+}
+
+.team-item {
+    margin-left: 2px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 120px;
+    height: 65px;
+}
+
+.team-item-status-text {
+    display: inline-block;
+    bottom: 1px;
+    position: relative;
+}
+
+.team-item-status {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: limegreen;
+    display: inline-block;
+}
+
+
+
+/* Queued Players */
+.server-info-queued-players {
+    display: grid;
+    grid-template-columns: repeat(2, 25px); /* create 3 equal-width columns */
+    grid-template-rows: repeat(2, 0.1px); /* create 2 rows with a height of 0.1px */
+    gap: 20px; /* add 20px gap between grid items */
+}
+
+/* Connected Players */
+.server-info-connected-players {
+    grid-row: 1/1;
+    grid-column: 2/2;
+    display: grid;
+    grid-template-columns: repeat(2, 25px); /* create 3 equal-width columns */
+    grid-template-rows: repeat(0, 0.1px); /* create 2 rows with a height of 0.1px */
+    gap: 20px; /* add 20px gap between grid items */
+}
+
+/* Server Wipe Time */
+.server-info-wipe-time {
+    grid-row: 2/2;
+    grid-column: 1/1;
+    display: grid;
+    grid-template-columns: repeat(2, 25px); /* create 3 equal-width columns */
+    grid-template-rows: repeat(2, 0.1px); /* create 2 rows with a height of 0.1px */
+    gap: 20px; /* add 20px gap between grid items */
+}
+
+
+/* Util */
+.server-info-subtext {
+    grid-row: 2;
+    font-size: 10px;
+    margin: 0px;
+    border: 0px;
+    width: 100px;
+    text-align: left
+}
+
+.server-info-icon {
+    fill: white;
+    background-color: gray;
+    border-radius: 10px;
+    width: 40px;
+    height: 35px;
+    grid-row: 0 / 1;
+    grid-column: 0/1;
+}

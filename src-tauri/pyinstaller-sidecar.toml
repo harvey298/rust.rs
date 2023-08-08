@@ -1,0 +1,4 @@
+[build]
+source_dir = "../src-side-cars/"
+source_files = ["pair_listener.py"]
+dist = "./../src-side-cars/dist/"

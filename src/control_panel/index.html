@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="./main.js" defer></script>
+    <style>
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #ffe21c);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Control Panel</h1>
+
+    <div class="container" >
+
+      <div class="row info-box team-list" style="grid-column: 1/1;grid-row: 2/2;">
+
+        <div class="team-item">
+          <strong class="team-player-name">harvey29811</strong>
+          <div class="team-item-status-indicator">
+            <div class="team-item-status"></div>
+            <div class="team-item-status-text">Online</div>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <strong class="team-player-name">Beancup</strong>
+          <div class="team-item-status-indicator">
+            <div class="team-item-status"></div>
+            <div class="team-item-status-text">Online</div>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <strong class="team-player-name">ShiftKey</strong>
+          <div class="team-item-status-indicator">
+            <div class="team-item-status"></div>
+            <div class="team-item-status-text">Online</div>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <strong class="team-player-name">Blackraven2005</strong>
+          <div class="team-item-status-indicator">
+            <div class="team-item-status"></div>
+            <div class="team-item-status-text">Online</div>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <strong class="team-player-name">Foobar</strong>
+          <div class="team-item-status-indicator">
+            <div class="team-item-status"></div>
+            <div class="team-item-status-text">Online</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row info-box server-info" style="grid-column: 1/1;grid-row: 1/1;">
+
+        <div class="server-info-queued-players">
+          <img src="https://icons.getbootstrap.com/assets/icons/person-add.svg" class="server-info-icon" alt="People">
+          <span class="queued-players-count" style="grid-row: 1/2;grid-column: 2 /2;" >0</span>
+          <p class="server-info-subtext" style="grid-row: 2/2;grid-column: 2 / 2;">Queued Players</p>
+        </div>
+
+        <div class="server-info-connected-players">
+          <img src="https://icons.getbootstrap.com/assets/icons/people-fill.svg" class="server-info-icon" alt="People">
+          <span class="connected-players-count" style="grid-row: 1/2;grid-column: 2 /2;width: 200px;text-align: left;" ><span id="player-count">0</span>/<span id="player-count-max">0</span> Players</span>
+        </div>
+
+        <div class="server-info-wipe-time">
+          <img src="https://icons.getbootstrap.com/assets/icons/arrow-clockwise.svg" class="server-info-icon" alt="People">
+          <span class="server-info-wipe-time-clock" style="grid-row: 1/1;grid-column: 2 /2;width: 200px;text-align: left;">2 days ago</span>
+          <p class="server-info-subtext" style="grid-row: 2/2;grid-column: 2 / 2;">Last Wiped</p>
+        </div>
+
+      </div>
+
+      
+        <img class="row info-box server-map" src="../assets/map.jpg" style="height: 500px;width: 500px;grid-column: 4/4;grid-row: 1/1;">
+
+
+      
+
+
+
+
+    </div>
+  </body>
+</html>

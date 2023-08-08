@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="./main.js" defer></script>
+    <style>
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #ffe21c);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Test Page</h1>
+
+      <div class="row">
+        <div>
+          <button id="server_list_check" type="button">Server Check</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <button id="server_connect" type="button">Server Connect</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <button id="server_connected_test" type="button">Get Connected Servers</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <button id="server_map_test" type="button">Get Connected Servers Map</button>
+          <input type="text" id="offset" name="offset"><br><br>
+        </div>
+      </div>
+
+      <!-- <div class="row"> -->
+        <div style="top: 0px;position: absolute;">
+          <button id="login" type="button">Profile Login</button>
+
+          <label for="lname">Profile</label>
+          <input type="text" id="lname" name="lname"><br><br>
+
+        </div>
+      <!-- </div> -->
+
+
+    </div>
+  </body>
+</html>
